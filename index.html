@@ -1,28 +1,4 @@
 ---
-title: Home
 layout: default
 ---
 
-<body>
-
-		<!-- Header -->
-			<div id="header">
-						
-				<!-- Logo -->
-					
-				
-				<!-- Nav -->
-					<nav id="nav">
-                    <img style="float:left;" class="logo" src="images/ngts7.png" alt="logo">
-						<ul>
-							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
-						  <!--  <li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
-							<li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
-							<li {% if current[1] == 'disclaimer.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/disclaimer.html">Right Sidebar</a></li>
-							<li {% if current[1] == 'privacypolicy.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/privacypolicy.html">Two Sidebar</a></li>
-							<li {% if current[1] == 'contact.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/contact.html">No Sidebar</a></li>
-						</ul>
-					</nav>
-
-			</div>
